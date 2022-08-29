@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".fragment.HomeFragment">
+
+        <ScrollView
+            android:id="@+id/scvHome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ProgressBar
+                    android:id="@+id/progressbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    tools:context=".activities.HomeActivity">
+
+                    <androidx.viewpager2.widget.ViewPager2
+                        android:id="@+id/ViewPagerImageSlider"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:layout_marginTop="8dp"
+                        android:paddingStart="50dp"
+                        android:paddingEnd="50dp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="10dp"
+                                android:text="Explore Book"
+                                android:textColor="@color/black"
+                                android:textSize="22dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="130dp"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/cvChildren"
+                                    android:layout_width="100dp"
+                                    android:layout_height="120dp"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="2dp"
+                                    android:backgroundTint="@color/colorBackground"
+                                    app:cardCornerRadius="8dp"
+                                    app:cardElevation="10dp">
+
+                                    <LinearLayout
+                                        android:layout_width="100dp"
+                                        android:layout_height="120dp"
+                                        android:orientation="vertical">
+
+                                        <ImageView
+                                            android:layout_width="60dp"
+                                            android:layout_height="70dp"
+                                            android:layout_marginLeft="20dp"
+                                            android:layout_marginTop="10dp"
+                                            android:src="@drawable/iconchildren" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="40dp"
+                                            android:gravity="center"
+                                            android:text="Children"
+                                            android:textColor="@color/white"
+                                            android:textSize="20dp"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/cvNovel"
+                                    android:layout_width="100dp"
+                                    android:layout_height="120dp"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="2dp"
+                                    android:backgroundTint="@color/colorBackground"
+                                    app:cardCornerRadius="8dp"
+                                    app:cardElevation="10dp">
+
+                                    <LinearLayout
+                                        android:layout_width="100dp"
+                                        android:layout_height="120dp"
+                                        android:orientation="vertical">
+
+                                        <ImageView
+                                            android:layout_width="60dp"
+                                            android:layout_height="70dp"
+                                            android:layout_marginLeft="20dp"
+                                            android:layout_marginTop="10dp"
+                                            android:src="@drawable/iconnovel" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="40dp"
+                                            android:gravity="center"
+                                            android:text="Novel"
+                                            android:textColor="@color/white"
+                                            android:textSize="20dp"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/cvSchool"
+                                    android:layout_width="100dp"
+                                    android:layout_height="120dp"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="2dp"
+                                    android:backgroundTint="@color/colorBackground"
+                                    app:cardCornerRadius="8dp"
+                                    app:cardElevation="10dp">
+
+                                    <LinearLayout
+                                        android:layout_width="94dp"
+                                        android:layout_height="120dp"
+                                        android:orientation="vertical">
+
+                                        <ImageView
+                                            android:layout_width="60dp"
+                                            android:layout_height="80dp"
+                                            android:layout_marginLeft="20dp"
+                                            android:src="@drawable/iconschool" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="40dp"
+                                            android:gravity="center"
+                                            android:text="School"
+                                            android:textColor="@color/white"
+                                            android:textSize="20dp"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/cvLiterature"
+                                    android:layout_width="100dp"
+                                    android:layout_height="120dp"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="2dp"
+                                    android:backgroundTint="@color/colorBackground"
+                                    app:cardCornerRadius="8dp"
+                                    app:cardElevation="10dp">
+
+                                    <LinearLayout
+                                        android:layout_width="100dp"
+                                        android:layout_height="120dp"
+                                        android:orientation="vertical">
+
+                                        <ImageView
+                                            android:layout_width="60dp"
+                                            android:layout_height="70dp"
+                                            android:layout_marginLeft="20dp"
+                                            android:layout_marginTop="10dp"
+                                            android:src="@drawable/iconliterature" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="40dp"
+                                            android:gravity="center"
+                                            android:text="Literature"
+                                            android:textColor="@color/white"
+                                            android:textSize="20dp"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/cvTechnology"
+                                    android:layout_width="100dp"
+                                    android:layout_height="120dp"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="2dp"
+                                    android:backgroundTint="@color/colorBackground"
+                                    app:cardCornerRadius="8dp"
+                                    app:cardElevation="10dp">
+
+                                    <LinearLayout
+                                        android:layout_width="100dp"
+                                        android:layout_height="120dp"
+                                        android:orientation="vertical">
+
+                                        <ImageView
+                                            android:layout_width="60dp"
+                                            android:layout_height="70dp"
+                                            android:layout_marginLeft="20dp"
+                                            android:layout_marginTop="10dp"
+                                            android:src="@drawable/icontechnology" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="40dp"
+                                            android:gravity="center"
+                                            android:text="Technology"
+                                            android:textColor="@color/white"
+                                            android:textSize="18dp"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/cvPolitics"
+                                    android:layout_width="100dp"
+                                    android:layout_height="120dp"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="2dp"
+                                    android:backgroundTint="@color/colorBackground"
+                                    app:cardCornerRadius="8dp"
+                                    app:cardElevation="10dp">
+
+                                    <LinearLayout
+                                        android:layout_width="100dp"
+                                        android:layout_height="120dp"
+                                        android:orientation="vertical">
+
+                                        <ImageView
+                                            android:layout_width="60dp"
+                                            android:layout_height="80dp"
+                                            android:layout_marginLeft="20dp"
+                                            android:src="@drawable/iconpolitics" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="40dp"
+                                            android:gravity="center"
+                                            android:text="Politics"
+                                            android:textColor="@color/white"
+                                            android:textSize="18dp"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/cvHistory"
+                                    android:layout_width="100dp"
+                                    android:layout_height="120dp"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_marginRight="20dp"
+                                    android:backgroundTint="@color/colorBackground"
+                                    app:cardCornerRadius="8dp"
+                                    app:cardElevation="10dp">
+
+                                    <LinearLayout
+                                        android:layout_width="100dp"
+                                        android:layout_height="120dp"
+                                        android:orientation="vertical">
+
+                                        <ImageView
+                                            android:layout_width="60dp"
+                                            android:layout_height="80dp"
+                                            android:layout_marginLeft="20dp"
+                                            android:layout_marginTop="5dp"
+                                            android:src="@drawable/iconhistory" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="40dp"
+                                            android:gravity="center"
+                                            android:text="History"
+                                            android:textColor="@color/white"
+                                            android:textSize="18dp"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
+                                </androidx.cardview.widget.CardView>
+                            </LinearLayout>
+                        </HorizontalScrollView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="10dp"
+                                android:text="New Books"
+                                android:textColor="@color/black"
+                                android:textSize="22dp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="5dp"
+                                android:src="@drawable/iconnew" />
+
+
+                        </LinearLayout>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerNewBook"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="10dp"
+                                android:text="Top Sell"
+                                android:textColor="@color/black"
+                                android:textSize="22dp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="5dp"
+                                android:src="@drawable/iconsell" />
+
+
+                        </LinearLayout>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerViewTopSell"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="10dp"
+                                android:text="Book Sale"
+                                android:textColor="@color/black"
+                                android:textSize="22dp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="5dp"
+                                android:src="@drawable/iconsale" />
+
+
+                        </LinearLayout>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerViewSale"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="10dp"
+                                android:text="Recommend"
+                                android:textColor="@color/black"
+                                android:textSize="22dp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="5dp"
+                                android:src="@drawable/iconrecommend" />
+
+                        </LinearLayout>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerViewRecommend"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="20dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+</FrameLayout>

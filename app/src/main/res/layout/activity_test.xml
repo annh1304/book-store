@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical">
+
+        <ImageView
+
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/colorBackground">
+            <!--            android:id="@+id/imgBack"-->
+        </ImageView>
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="-180dp"
+            android:src="@drawable/iconback" />
+        <!--        android:id="@+id/btnBack"-->
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="-35dp"
+            android:text="Book Detail"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="-120dp">
+
+        <LinearLayout
+            android:id="@+id/ln6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imgBook"
+                android:layout_width="180dp"
+                android:layout_height="245dp"
+                android:layout_marginLeft="115dp"
+                android:scaleType="centerCrop"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ln6"
+            android:gravity="center"
+            android:hint="Book name"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24dp" />
+
+        <EditText
+            android:id="@+id/edtAuthor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtTitle"
+            android:gravity="center"
+            android:hint="Author"
+            android:textAlignment="center"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Type"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtTypeName"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:hint="novel"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Page"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtPage"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:hint="count"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Price"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:hint="200000"
+                android:textColor="@color/red"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="170dp"
+        android:layout_marginBottom="5dp">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="15dp">
+
+            <EditText
+                android:id="@+id/edtIntroduction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:hint="Câu chuyện xoay quanh sinh viên trẻ Rodion Romanovich Raskolnikov (nói rằng nhanh hơn mười lần), một thanh niên thông minh nhưng gặp rắc rối, người đã chuẩn bị cho một vụ giết người hoàn hảo của một tiệm cầm đồ tàn ác. Tuy nhiên, sau vụ giết người, Raskolnikov bị mắc kẹt trong sự tồn tại tội lỗi của mình, khiến anh ta phát điên khi mẹ và em gái của anh ta cùng anh ta đến St"
+                android:textSize="20dp"
+                android:layout_marginBottom="10dp"/>
+
+        </androidx.cardview.widget.CardView>
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,31 @@
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorBackground"
+    android:layout_centerVertical="true"
+    android:layout_height="?attr/actionBarSize"
+    android:fitsSystemWindows="true"
+    app:titleTextColor="@color/white"
+    android:id="@+id/toolbar">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="5dp"
+            android:text="BOOK STORE"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/iconsearch"
+            android:layout_marginLeft="-50dp"
+            android:layout_marginTop="6dp"/>
+    </LinearLayout>
+
+</androidx.appcompat.widget.Toolbar>

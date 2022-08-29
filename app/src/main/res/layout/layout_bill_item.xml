@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F4F2F2"
+    android:orientation="horizontal">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ivBiaSanPhamBill"
+                android:layout_width="100dp"
+                android:layout_height="160dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/tvNgayBill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="7dp"
+                android:text="Ngày mua"
+                android:textSize="16dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@id/ivBiaSanPhamBill"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvTenSanPhamGioHangBill"
+                    android:layout_width="220dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="35dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="Doraemon: Thám hiểm vùng đất mới"
+                    android:textColor="@color/black"
+                    android:textSize="23dp" />
+
+                <TextView
+                    android:id="@+id/tvSoLuongBill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Số lượng"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvGiaSanPhamGioHangBill"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ivBiaSanPhamBill"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="10dp"
+                    android:text="20000 VNĐ"
+                    android:textColor="@color/red"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/tvTrangThaiBill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Trạng Thái"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
